@@ -1,6 +1,6 @@
 import React from 'react'
-import Banners from '../../elements/banners'
-import '../css/header.scss'
+import Banners from '../elements/banners';
+import '../css/header.scss';
 
 
 function Header() {

@@ -1,0 +1,19 @@
+button {
+    background-color: #7553E1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 3px 6px rgba(255, 255, 255, 0.24);
+    border-radius: 20px;
+    font-family: 'Inter';
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 60px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    button{
+        width: 100%;
+    }
+}

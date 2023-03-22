@@ -1,7 +1,8 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import '../components/css/banner.scss'
+import '../css/banner.scss'
+import ButtonGame from './buttonGame';
 
 function Banners() {
   return (
@@ -117,15 +118,15 @@ function Banners() {
            >
                 <div>
                     <img className='front' src="./logo1.png"/>
-                    <span>Juega YA</span>
+                    <ButtonGame/>
                 </div>
                 <div>
                     <img className='others' src="./logo2.png" />
-                    <span>Juega YA</span>
+                    <ButtonGame/>
                 </div>
                 <div>
                     <img className='others' src="./logo3.png" />
-                    <span>Juega YA</span>
+                    <ButtonGame/>
                 </div>
             </Carousel>
     </div>
