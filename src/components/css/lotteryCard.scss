@@ -1,0 +1,103 @@
+.card{
+    width: 90%;
+    margin: 20px 5%;
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    flex-direction: column;
+    .logo-card{
+        background: radial-gradient(100% 100% at 50% 0%, #5B3098 0%, #2F1A4C 100%);
+        display: grid;
+        
+        .navbar-logo-card{
+            margin: 0 auto;
+            width: 40%;
+            align-items: center;
+        }
+        
+        .lottery-name{
+            display: grid;
+            margin: 15px auto;
+            justify-content: center;
+
+            .name{
+                font-family: 'Wolf Sans SC';
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 23px;
+                text-align: center;
+            }
+
+            .bar{
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+    }
+
+    .body{
+        display: grid;
+        background-image: url("../../assets/Rectangle.png");
+        background-image: url("../../assets/cents.png");
+        z-index: -3;
+        .sort{
+            background: #FFFFFF;
+            opacity: 0.65;
+            z-index: -1;
+            border-radius: 14px;
+            display: grid;
+            text-align: center;
+            color: #000;
+            margin: 25px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+
+            .sort-day{
+                margin: 15px 0;
+            }
+
+            .play-numbers{
+                display: flex;
+                align-items: center;
+                margin: 15px auto;
+                font-size: 10px;
+
+                .btn1,.btn2{
+                    background-color: #7553E1;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 3px 6px rgba(255, 255, 255, 0.24);
+                    border-radius: 20px;
+                    font-family: 'Inter';
+                    color: #FFF;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .play{
+            background: #FFFFFF;
+            opacity: 0.65;
+            border-radius: 20px;
+            display: grid;
+            margin: 20px 20px;
+            
+
+            button{
+                margin: 30px 40px;
+                padding: 10px 0;
+                background: #7553E1;
+                border: 2px solid #E1BBFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 26px rgba(229, 161, 253, 0.81), inset 0px 0px 14px rgba(196, 138, 223, 0.25), inset 0px 3px 6px rgba(255, 255, 255, 0.24);
+                border-radius: 30px;
+                font-family: 'Inter';
+                font-weight: 700;
+                color: #FFF;
+            }
+        }
+    }
+}

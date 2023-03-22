@@ -1,0 +1,54 @@
+.game {
+    background: #0E0D30;
+    border-radius: 13px;
+    margin: 20px 2%;
+    color: #FFF;
+    padding: 20px 30px;
+
+
+    .easy{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        
+        .play-icon{
+            margin: 0 12px;
+        }
+    }
+
+    p{
+        color: #626178;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    li{
+        margin: 15px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .image{
+        overflow: hidden;
+        position: relative;
+        left: 0;
+        margin: 30px 0;
+        text-align: center;
+        width: auto;
+
+        .tickets{
+            position: absolute;
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .game{
+        width: 75%;
+        margin: 20px 0;
+    }
+    
+}

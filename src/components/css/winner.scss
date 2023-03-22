@@ -1,0 +1,81 @@
+.winner {
+    background: #0E0D30;
+    border-radius: 13px;
+    margin: 20px 2%;
+    color: #FFF;
+    padding: 20px 30px;
+
+    .easy{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        
+        .play-icon{
+            margin: 0 12px;
+        }
+    }
+
+    p{
+        color: #626178;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    li{
+        margin: 15px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .image{
+        overflow: hidden;
+        position: relative;
+        left: 0;
+        margin: 30px 0;
+        text-align: center;
+        width: auto;
+
+        .dollar {
+            position: absolute;
+            right: 37%;
+        }
+
+        .car{
+            position: absolute;
+            top: 20%;
+        }
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    .winner{
+        margin: 20px 2%;
+
+        .image{
+            .dollar{
+                right: 5%;
+            }
+        }
+
+    }   
+}
+
+@media (max-width: 321px) {
+    .winner{
+        width: 75%;
+        margin: 20px 0;
+
+        .image{
+            .dollar{
+                right: 0;
+            }
+        }
+
+    }
+    
+}

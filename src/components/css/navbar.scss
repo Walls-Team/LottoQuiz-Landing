@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    top: 0;
 
     .left {
         display: flex;
@@ -114,7 +115,7 @@
 }
 
 .nav-mg {
-    height: 80px;
+    height: 60px;
 }
 
 @media (max-width: 1024px) {
@@ -128,10 +129,11 @@
         z-index: 10;
         height: 80px;
         padding: 0 2px;
-        position: fixed;
         right: 0;
         left: 0;
         top: 0;
+        position: fixed;
+        background: #05051E;
 
         .left{
             margin: 0;
@@ -146,7 +148,6 @@
         }
     }
 }
-
 
 
 @media (min-width: 1025px) {

@@ -4,7 +4,7 @@ import '../css/buttonGame.scss';
 
 const ButtonGame = () => {
   return (
-    <button>Juega YA</button>
+    <button className="play-button">Juega YA</button>
   )
 }
 
