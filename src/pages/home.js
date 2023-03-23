@@ -7,14 +7,16 @@ import './css/home.scss'
 
 function Home() {
   return (
-    <>
+    <div className='home'>
     <div className='container-header'>
-      {/*<Header/>*/}
+      <Header/>    
+    </div>
+    <div className='content'>
       <LotteryCard/>
       <Game/>
       <Winner/>
     </div>
-    </>
+    </div>
   )
 }
 
