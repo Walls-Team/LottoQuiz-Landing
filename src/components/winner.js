@@ -1,5 +1,5 @@
 import React from "react";
-import { EspiralIcon, MedalIcon } from "../svg/icons";
+import {  MedalIcon } from "../svg/icons";
 import './css/winner.scss'
 import ButtonGame from './elements/buttonGame'
 

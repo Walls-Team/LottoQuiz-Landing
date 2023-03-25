@@ -2,10 +2,14 @@
     position: relative;
     .container-header {
         top: 20px;
-        height: 230vh;
+        height: 100vh;
         position: relative;
     }
-  
+    .test{ 
+        position: relative;
+        bottom: 10px;
+        margin-bottom: -280px;
+    }
     .content {
         position: relative;
         bottom: 0;
@@ -24,17 +28,20 @@
 
         .about{
             color: #FFF;
-            margin: 20px 2%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
             .lottoquiz{
                 font-weight: 700;
                 font-size: 28px;
                 line-height: 34px;
                 text-align: center;
-                width: 100%;
             }
             .about-us{
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 85%;
                 line-height: 19px;
                 color: #626178;
             }
@@ -44,7 +51,9 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
-
+                .lotto-img{
+                    width: 95%;
+                }
                 .svg-icons{
                     position: absolute;
                     align-items: center;

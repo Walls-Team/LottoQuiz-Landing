@@ -1,8 +1,9 @@
 
 .banner{
+    position: relative;
+    top: 30px;
     .content{
         position: relative;
-        top: 30px;
     }
     
 .next {
@@ -16,12 +17,15 @@
     right: 45px;
 }
 img {
-    padding: 50px;
+    position: relative;
+    margin-bottom: 130px;
+    padding: 30px;
 }
 }
 .front{
     position: relative;
-    margin-bottom: 30px;
+    bottom: 50%;
+    margin-bottom: 60px;
 }
 .others{
     position: relative;

@@ -1,6 +1,7 @@
 import React from "react";
-import { StarIcon } from "../svg/icons";
 import './css/testimonios.scss';
+import People from "./elements/people";
+import { Carousel } from 'react-responsive-carousel';
 
 const Testimonios = () => {
 
@@ -12,51 +13,87 @@ const Testimonios = () => {
 
   const dataTestimonios = [
     {
-        "photo": image,
-        "name": "Jane Doe",
-        "testimonio": "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
+        id: 1,
+        photo: image,
+        name: "Jane Doe",
+        testimonio: "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
     },
     {
-        "photo": image2,
-        "name": "Jane Doe",
-        "testimonio": "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
+        id: 2,
+        photo: image2,
+        name: "Jane Doe",
+        testimonio: "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
     },
     {
-        "photo": image3,
-        "name": "Jane Doe",
-        "testimonio": "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
+        id: 3,
+        photo: image3,
+        name: "Jane Doe",
+        testimonio: "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
     },
     {
-        "photo": image4,
-        "name": "Jane Doe",
-        "testimonio": "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
+        id: 4,
+        photo: image4,
+        name: "Jane Doe",
+        testimonio: "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
     },
     {
-        "photo": image5,
-        "name": "Jane Doe",
-        "testimonio": "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
+        id: 5,
+        photo: image5,
+        name: "Jane Doe",
+        testimonio: "“Lorem ipsum dolor sit amet consectur adipsigin elocua magus nulla diam, lorem ipsum dolor sit amet consectur adipiscing”"
     }
   ]
 
+  const peoples_ = dataTestimonios.map(people =>
+    <div key={people.id}>
+      <People photo={people.photo} name={people.name} testimonio={people.testimonio}
+      />
+    </div>
+  )
   return (
     <div className="testimonios">
+        <div className="text-test">
         <h3>Lo que dicen nuestros ganadores:</h3>
         <p>Lorem ipsum dolor sit amet consectur adipiscing faucibus ullacorper id ac lacus volutpat.</p>
+        </div>
         <div className="client">
-            { dataTestimonios.map( item => (
-                <>
-                    <img className="photo-client" alt='client' src={item.photo} />
-                    <div className="comment">
-                        <StarIcon/>
-                        <StarIcon/>
-                        <StarIcon/>
-                        <StarIcon/>
-                        <StarIcon/>
-                        <p>{item.testimonio}</p>
-                        <h3>{item.name}</h3>
-                    </div>
-                </>
-            ))}
+        <Carousel
+           className='content'
+           showThumbs={false}
+           showStatus={false}
+           showArrows={false}
+           emulateTouch={true}
+           renderIndicator={(onClickHandler, isSelected, index, label) => {
+            const defStyle = { 
+                padding: 6,
+                position: "relative",
+                borderRadius: 90,
+                width: 10,
+                height: 10,
+                margin: 3,
+                bottom: 190,
+                background: "#393964",
+                display: "inline-block",
+                cursor: "pointer" };
+            const style = isSelected
+              ? { ...defStyle, background: "#896DE5", width: 30, }
+              : { ...defStyle };
+              return (
+                <div
+                  style={style}
+                  onClick={onClickHandler}
+                  onKeyDown={onClickHandler}
+                  value={index}
+                  key={index}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`${label} ${index + 1}`}
+                />
+              );
+            }}
+           >
+            {peoples_}
+            </Carousel>
         </div>
     </div>
   )

@@ -10,22 +10,25 @@
 
    .left {
       display: flex;
+      width: 20%;
       margin-left: 40px;
    } 
 
    .icons{
+      position: relative;
+      right: 0;
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 40px;
-      min-width: 20%;
+      gap: 15px;
+      min-width: 9%;
    }
 }
 
 @media (max-width: 1023px) {
 
    .nav-logo {
-      height: 45.5px;
+      height: 60%;
       margin-top: 9px;
    }
 
@@ -36,6 +39,7 @@
 
       .left{
           margin: 10px;
+          margin-bottom: 15px;
       }
 
       .icons{

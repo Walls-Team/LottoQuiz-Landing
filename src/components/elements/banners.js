@@ -116,13 +116,13 @@ function Banners() {
           }}
            >
                 <div>
-                    <img className='front' src="./logo1.png"/>
+                    <img className='front' src="./logo1.png" alt=''/>
                 </div>
                 <div>
-                    <img className='others' src="./logo2.png" />
+                    <img className='others' src="./logo2.png" alt=''/>
                 </div>
                 <div>
-                    <img className='others' src="./logo3.png" />
+                    <img className='others' src="./logo3.png" alt=''/>
                 </div>
             </Carousel>
     </div>

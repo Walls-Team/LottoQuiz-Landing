@@ -1,5 +1,5 @@
 import React from "react";
-import { EspiralIcon, PlayIcon } from "../svg/icons";
+import { PlayIcon } from "../svg/icons";
 import './css/game.scss'
 import ButtonGame from './elements/buttonGame'
 
@@ -19,7 +19,7 @@ const Game = () => {
             <li>Turpis tellus vitae euismod in pulvinar ut in sed. eleifend porta tempor vivamus praesent.</li>
             <li>Faucibus ullamcorper id ac lacus volutpat eu. Nulla diam.</li>
         </ul>
-        <ButtonGame/>
+        <ButtonGame />
         <div className="image">
             <img src="/Tickets.png" alt='Tickets' className="tickets" />
             <img src="/ellipse.png" alt='ellipse' className="elipse" />

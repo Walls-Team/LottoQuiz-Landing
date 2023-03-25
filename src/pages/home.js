@@ -30,7 +30,9 @@ function Home() {
         <LotteryCard/>
         <Game/>
         <Winner/>
+        <div className='test'>
         <Testimonios/>
+        </div>
         <div className="about">
           <h1 className='lottoquiz'>LottoQuiz en Venezuela</h1>
           <p className='about-us'>Lorem ipsum dolor sit amet consectetur. Tempor pharetra orci dignissim ut leo quis id adipiscing. Quam nisl ullamcorper nisi pulvinar iaculis at nulla cras. Eros hac blandit vivamus convallis pulvinar sollicitudin egestas. Condimentum nunc nibh sagittis malesuada at nulla ut morbi eget. Sit neque volutpat et neque. Viverra vulputate elit non vitae hendrerit congue faucibus ligula.</p>

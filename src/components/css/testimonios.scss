@@ -1,28 +1,14 @@
 .testimonios{
+    position: relative;
     color: #FFF;
-    margin: 20px 2%;
-    width: 80%;
-
-    .client{
-
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        
-        .photo-client{
-            position: relative;
-        }
-
-        .comment{
-            background: rgba(255, 255, 255, 0.3);
-            border: 1px solid #FFFFFF;
-            backdrop-filter: blur(5px);
-            border-radius: 5px;
-            text-align:left;
-            width: 250px;
-            margin: 5px 20px;
-        }
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .text-test {
+        margin: 14px;
+    }
+    .client {
+        position: relative;
+        top: -70px;
     }
 }
