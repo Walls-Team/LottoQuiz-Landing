@@ -1,0 +1,39 @@
+.carou-desktop {
+    position: relative;
+    .custom-dot {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+         user-select: none; 
+             padding: 6;
+            position: relative;
+            border-radius: 90px;
+            width: 12px;
+            height: 12px;
+            margin: 3px;
+            bottom: 190px;
+            background: #393964;
+            display: inline-block;
+            cursor: pointer 
+    }
+    .custom-dot--active{
+        background-color: 
+        #896DE5;
+        width: 30px;
+    }
+    .carousel-testi {
+        position: relative;
+    }
+    svg {
+        display: none;
+        position: relative;
+        margin: 3px;
+        bottom: 70px;
+    }
+    .carousel-button-group {
+        position: relative;
+        display: flex;
+        bottom: 140px;
+        left: 1%;
+    }
+}
