@@ -3,7 +3,18 @@
     color: #FFF;
     margin: auto;
     .text-test {
-        margin: 14px;
+        margin: 60px 30px;
+        h3{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        p{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
     .desktop {
         position: relative;

@@ -33,7 +33,7 @@ function Home() {
         <Results/>
         <div className='responsive'>
           <div className='lottery'>
-          <LotteryCard/>
+            <LotteryCard/>
           </div>
           <div className="easy-items">
             <Game/>
@@ -41,7 +41,7 @@ function Home() {
           </div>
         </div>
         <div className='test'>
-        <Testimonios/>
+          <Testimonios/>
         </div>
         <div className="about">
           <div className='about-text'>

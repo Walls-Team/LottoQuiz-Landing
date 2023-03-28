@@ -6,24 +6,25 @@
         position: relative;
     }
     
-.next {
-    float: right;
-    cursor: pointer ;
-    display: none;
+    .next {
+        float: right;
+        cursor: pointer ;
+        display: none;
+    }
+    .back {
+        position: absolute;
+        display: none;
+        bottom: 0px;
+        right: 85px;
+        cursor: pointer ;
+    }
+    img {
+        position: relative;
+        margin-bottom: 130px;
+        padding: 60px;
+    }
 }
-.back {
-    position: absolute;
-    display: none;
-    bottom: 0px;
-    right: 85px;
-    cursor: pointer ;
-}
-img {
-    position: relative;
-    margin-bottom: 130px;
-    padding: 30px;
-}
-}
+
 .front{
     position: relative;
     bottom: 50%;
