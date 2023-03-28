@@ -48,10 +48,25 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .game{
+        height: 50vh;
+        margin: 20px 0;
+
+        .image{
+            width: 25%;
+            left: 72%;
+            bottom: 34%;
+        }
+    }
+    
+}
+
 @media (max-width: 321px) {
     .game{
         width: 78%;
         margin: auto;
+        
     }
     
 }

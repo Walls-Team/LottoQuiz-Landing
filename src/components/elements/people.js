@@ -5,7 +5,7 @@ import '../css/people.scss'
 function People({id, photo, name, testimonio}) {
 
   return (
-    <div className = "card" key={id}>
+    <div className = "card-people" key={id}>
       <div className='container-people'>
             <img className="photo-people" alt='client' src={photo} />
             <div className='description'>

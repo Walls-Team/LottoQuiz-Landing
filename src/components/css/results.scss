@@ -2,6 +2,10 @@
     color: #FFF;
     justify-content: center;
     text-align: center;
+    background: url('../../assets/paper.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 
     h2{
         font-weight: 500;
@@ -39,5 +43,11 @@
         .golden{
             background: #D9B85E;
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .results{
+        background-repeat: repeat;
     }
 }

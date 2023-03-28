@@ -23,14 +23,20 @@ function Home() {
       </div>
       <div className='content'>
         <div className='count-days'>
+          <img src='/cents1.png' alt='cent' className='coin-1' />
+          <img src='/cents2.png' alt='cent' className='coin-2' />
+          <img src='/cents3.png' alt='cent' className='coin-3' />
+          <img src='/cents4.png' alt='cent' className='coin-4' />
           <h3>EL SORTEO SE REALIZA EN:</h3>
           <CountdownTimer targetDate={dateTimeAfterThreeDays} />
         </div>
         <Results/>
         <div className='responsive'>
-        <LotteryCard/>
-        <Game/>
-        <Winner/>
+          <LotteryCard/>
+          <div className="easy-items">
+            <Game/>
+            <Winner/>
+          </div>
         </div>
         <div className='test'>
         <Testimonios/>

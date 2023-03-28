@@ -57,6 +57,20 @@
     
 }
 
+@media (min-width: 1024px) {
+    .winner{
+        height: 50vh;
+        margin: 20px 0;
+
+        .image{
+            width: 30%;
+            left: 70%;
+            bottom: 38%;
+        }
+    }
+    
+}
+
 @media (max-width: 767px) {
     .winner{
         margin: 20px 2%;

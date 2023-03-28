@@ -19,6 +19,29 @@
             justify-content: center;
             text-align: center;
 
+            .coin-1{
+                top: 260px;
+                right: 95px;
+                position: relative;
+            }
+            .coin-2{
+                position: relative;
+                left: 450px;
+                top: 250px;
+            }
+            .coin-3{
+                position: relative;
+                left: 300px;
+                top: 300px;
+                z-index: -1;
+            }
+            .coin-4{
+                position: relative;
+                right: 700px;
+                top: 240px;
+                z-index: -1;
+            }
+
             h3{
                 font-weight: 500;
                 font-size: 24px;
@@ -50,6 +73,24 @@
         }
     }
 }
+
+@media(min-width: 1024px) {
+    .home{
+        .content{
+            .responsive{
+                display: flex;
+                align-items: flex-start;
+                margin: 50px 0;
+                .easy-items{
+                    display: grid;
+                    height: 100vh;
+                }
+            }
+        }
+    }
+}
+
+
 @media(min-width:768px) {
 .home{
     position: relative;
@@ -100,11 +141,13 @@
                     display: block;
                     bottom: 135px;
                     right: 40px;
+                    z-index: 1;
                 }
                 .back {
                     position: absolute;
                     display: block;
                     bottom: 135px;
+                    z-index: 1;
                 }
                 .dots{
                     top: -130px !important;
@@ -114,13 +157,10 @@
     }
     .content {
         position: relative;
-        .responsive {
-            display: flex;
-        }
     }
     .test {
         margin-bottom: -220px;
-        .card{
+        .card-people{
             height: auto;
             top: 20px;
         }
@@ -172,4 +212,18 @@
         }
     }
 }
+}
+
+@media (max-width: 768px) {
+    .home{
+        .content {
+            position: relative;
+            .count-days{
+                width: 100%;
+                .coin-1, .coin-2, .coin-3, .coin-4{
+                    display: none;
+                }
+            }
+        }
+    }
 }

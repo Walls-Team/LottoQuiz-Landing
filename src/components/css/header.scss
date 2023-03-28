@@ -147,3 +147,11 @@
 
     }
 }
+
+@media (max-width: 425px) {
+    .header{
+        .cointainer-banners{
+            height: 110vh;
+        }
+    }
+}
