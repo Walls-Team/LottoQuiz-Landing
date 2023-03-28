@@ -29,6 +29,12 @@ function Header() {
           <ButtonGame/> 
         </div>
       </div>
+      <div className='desktop-background'>
+        <img className='group' src='./background.png' alt=''/>
+        <div className='button-desktop'>
+          <ButtonGame/> 
+        </div>
+      </div>
       <div className='elipse'/>
         <div className='cointainer-banners'>
             <Banners/>

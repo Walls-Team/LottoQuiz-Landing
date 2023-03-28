@@ -1,0 +1,38 @@
+.card-about {
+    width: 100%;
+
+    .about-content {
+        position: relative;
+        
+    
+    .lotto-img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .card-image {
+            width: 100%;
+         }
+        .svg-icons{
+            z-index: 1;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            position: absolute;
+            .play{
+                width: 60%;
+                position: absolute;
+                top: 0;
+                bottom: 120px;
+                right: 0;
+                left: 0;
+                margin: auto;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+}

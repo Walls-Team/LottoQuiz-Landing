@@ -8,13 +8,14 @@
     
 .next {
     float: right;
-    display: none;
+    cursor: pointer ;
 }
 .back {
     position: absolute;
     display: none;
     bottom: 0px;
-    right: 45px;
+    right: 85px;
+    cursor: pointer ;
 }
 img {
     position: relative;

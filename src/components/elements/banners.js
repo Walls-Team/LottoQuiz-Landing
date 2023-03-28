@@ -1,5 +1,5 @@
 import React from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import '../css/banner.scss'
 
@@ -29,6 +29,7 @@ function Banners() {
               : { ...defStyle };
               return (
                 <div
+                  className='dots'
                   style={style}
                   onClick={onClickHandler}
                   onKeyDown={onClickHandler}
@@ -45,7 +46,7 @@ function Banners() {
               <div
                 className={`${
                   hasNext ? "absolute" : "hidden"
-                } top-0 bottom-0 left-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20`}
+                } `}
                 onClick={clickHandler}
                 >
                 <div className='next'>
@@ -82,7 +83,7 @@ function Banners() {
               <div
                 className={`${
                   hasPrev ? "absolute" : "hidden"
-                } top-0 bottom-0 left-0 flex justify-center items-center p-3 opacity-30 hover:opacity-100 cursor-pointer z-20`}
+                } `}
                 onClick={clickHandler}
               >
                 <div className='back'>
@@ -122,7 +123,7 @@ function Banners() {
                     <img className='others' src="./logo2.png" alt=''/>
                 </div>
                 <div>
-                    <img className='others' src="./logo3.png" alt=''/>
+                    <img className='others' id='tab' src="./logo3.png" alt=''/>
                 </div>
             </Carousel>
     </div>

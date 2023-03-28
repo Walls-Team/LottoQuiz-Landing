@@ -26,8 +26,8 @@ function CarouTesti() {
           items: 1
         }
       };
-      const ArrowRight = ({ className, onClick }) => (
-        <div className={className} onClick={onClick}>
+      const ArrowRight = ({ onClick }) => (
+        <div className="buttoms" onClick={onClick}>
           <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_di_14_290)">
                 <rect x="4.505" y="0.52356" width="30.4951" height="30.4951" rx="15.2475" fill="#7553E1"/>
@@ -54,8 +54,8 @@ function CarouTesti() {
                 </svg>
         </div>
       )
-      const ArrowLeft = ({ onClick, className }) => (
-        <div onClick={onClick} className={className}>
+      const ArrowLeft = ({ onClick }) => (
+        <div onClick={onClick} className="buttoms">
           <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_di_14_290)">
                 <rect x="4.505" y="0.52356" width="30.4951" height="30.4951" rx="15.2475" fill="#7553E1"/>

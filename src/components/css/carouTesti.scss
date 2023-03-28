@@ -11,7 +11,7 @@
             width: 12px;
             height: 12px;
             margin: 3px;
-            bottom: 190px;
+            bottom: 105px;
             background: #393964;
             display: inline-block;
             cursor: pointer 
@@ -24,12 +24,10 @@
     .carousel-testi {
         position: relative;
     }
-    svg {
+    .buttoms{
         display: none;
-        position: relative;
-        margin: 3px;
-        bottom: 70px;
     }
+
     .carousel-button-group {
         position: relative;
         display: flex;

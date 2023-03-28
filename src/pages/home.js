@@ -6,8 +6,8 @@ import Results from '../components/results'
 import Testimonios from '../components/testimonios'
 import Winner from '../components/winner'
 import CountdownTimer from '../components/elements/countdownTimer'
-import { Ellipse } from '../svg/icons'
 import './css/home.scss'
+import AboutCarou from '../components/elements/aboutCarou'
 
 function Home() {
 
@@ -27,21 +27,21 @@ function Home() {
           <CountdownTimer targetDate={dateTimeAfterThreeDays} />
         </div>
         <Results/>
+        <div className='responsive'>
         <LotteryCard/>
         <Game/>
         <Winner/>
+        </div>
         <div className='test'>
         <Testimonios/>
         </div>
         <div className="about">
+          <div className='about-text'>
           <h1 className='lottoquiz'>LottoQuiz en Venezuela</h1>
           <p className='about-us'>Lorem ipsum dolor sit amet consectetur. Tempor pharetra orci dignissim ut leo quis id adipiscing. Quam nisl ullamcorper nisi pulvinar iaculis at nulla cras. Eros hac blandit vivamus convallis pulvinar sollicitudin egestas. Condimentum nunc nibh sagittis malesuada at nulla ut morbi eget. Sit neque volutpat et neque. Viverra vulputate elit non vitae hendrerit congue faucibus ligula.</p>
+          </div>
           <div className="video">
-            <img src='/lotto.png' alt='lotto' className='lotto-img' />
-            <div className="svg-icons">
-              <img src='/Polygon.png' alt='lotto-play' className='polygon' />
-              <Ellipse/>
-            </div>
+            <AboutCarou/>
           </div>
         </div>
       </div>
