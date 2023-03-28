@@ -6,6 +6,7 @@ import ButtonGame from './elements/buttonGame'
 const Game = () => {
   return (
     <div className="game">
+        <div className="text-game">
         <div className="easy">
             <PlayIcon />
             <span className='play-icon'>Fácil de jugar: </span>
@@ -20,6 +21,7 @@ const Game = () => {
             <li>Faucibus ullamcorper id ac lacus volutpat eu. Nulla diam.</li>
         </ul>
         <ButtonGame />
+        </div>
         <div className="image">
             <img src="/Tickets.png" alt='Tickets' className="tickets" />
             <img src="/ellipse.png" alt='ellipse' className="elipse" />

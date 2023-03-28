@@ -6,6 +6,7 @@ import ButtonGame from './elements/buttonGame'
 const Winner = () => {
   return (
     <div className="winner">
+        <div className="text-game">
         <div className="easy">
             <MedalIcon/>
             <span className='play-icon'>Fácil de ganar: </span>
@@ -20,6 +21,7 @@ const Winner = () => {
             <li>Faucibus ullamcorper id ac lacus volutpat eu. Nulla diam.</li>
         </ul>
         <ButtonGame/>
+        </div>
         <div className="image">
             <img src="/Dollars.png" alt='Dollars' className="dollar" />
             <img src="/car.png" alt='car' className="car" />

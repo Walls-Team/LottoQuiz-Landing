@@ -32,7 +32,9 @@ function Home() {
         </div>
         <Results/>
         <div className='responsive'>
+          <div className='lottery'>
           <LotteryCard/>
+          </div>
           <div className="easy-items">
             <Game/>
             <Winner/>

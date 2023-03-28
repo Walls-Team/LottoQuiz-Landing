@@ -5,7 +5,6 @@
     width: 88%;
     color: #FFF;
     padding: 20px 18px;
-    
     .easy{
         font-weight: 700;
         font-size: 20px;
@@ -50,14 +49,7 @@
 
 @media (min-width: 1024px) {
     .game{
-        height: 50vh;
         margin: 20px 0;
-
-        .image{
-            width: 25%;
-            left: 72%;
-            bottom: 34%;
-        }
     }
     
 }

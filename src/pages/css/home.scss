@@ -76,18 +76,88 @@
 
 @media(min-width: 1024px) {
     .home{
-        .content{
-            .responsive{
-                display: flex;
-                align-items: flex-start;
-                margin: 50px 0;
-                .easy-items{
-                    display: grid;
-                    height: 100vh;
+        .container-header {
+
+            position: relative;
+            top: 20px;
+            height: auto;
+            margin-bottom: 50px;
+            .header{
+                .banner {
+                    .dots{
+                        top: -125px !important;
+                    }
                 }
             }
         }
+        .count-days{
+            margin-top: -220px;
+        }
+        .content{
+            .test {
+                .card-people{
+                    height: auto;
+                    top: -40px;
+                }
+            }
+            .responsive{
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+                margin: 50px 0 200px;
+                height: auto;
+                .lottery {
+                    width: 50%;
+                    .card{ 
+                        position: relative;
+                        align-items: center;
+                        top: 80px;
+                        margin: auto;
+                        width: 60%;
+                        .lottery {
+                            width: 100%;
+                        }
+                    }
+                }
+                .game {
+                    display: flex;
+                    .text-game {
+                        width: 50%;
+                    }
+                    .image {
+                        position: relative;
+                        width: 50%;
+                        bottom: 10px;
+            
+                    }
+                }
+                .winner {
+                    display: flex;
+                    .text-game {
+                        width: 50%;
+                    }
+                }
+                .easy-items{
+                    display: grid;
+                    height: 100vh;
+                    width: 50%;
+                }
+            }
+        }
+        .test {
+            margin-bottom: -220px;
+            .desktop{
+                .buttoms {
+                    position: relative;
+                    display: block;
+                    margin: 3px;
+                    bottom: 40px !important;
+                    cursor: pointer;
+                }
+            }
+            }
     }
+    
 }
 
 
@@ -97,6 +167,9 @@
     display: flex;
     flex-direction: column;
     .container-header {
+        background: url('../../assets/coins.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
         position: relative;
         top: 20px;
         height: auto;
@@ -150,7 +223,7 @@
                     z-index: 1;
                 }
                 .dots{
-                    top: -130px !important;
+                    top: -130px;
                 }
             }
         }
@@ -158,14 +231,28 @@
     .content {
         position: relative;
     }
+    .responsive {
+        .lottery {
+            margin-bottom: 30px;
+            .card{ 
+                position: relative;
+                margin: auto;
+                width: 60%;
+                .lottery {
+                    width: 100%;
+                }
+            }
+        }
+    }
     .test {
-        margin-bottom: -220px;
+        margin-bottom: -250px;
         .card-people{
             height: auto;
             top: 20px;
         }
         .desktop {
-            margin-top: 60px;
+            margin-top: -30px;
+            margin-bottom: 80px;
             .custom-dot {
                 display: none;
             }
@@ -173,7 +260,7 @@
                 position: relative;
                 display: block;
                 margin: 3px;
-                bottom: -15px;
+                bottom: 0;
                 cursor: pointer;
             }
         }
@@ -181,13 +268,13 @@
     .about{
         display: flex;
         .dots-about {
-            left: -200px;
+            left: -80px;
         }
         .about-text {
             position: relative;
             width: 50%;
             margin: auto;
-            bottom: 10px;
+            bottom: 40px;
             margin-left: 40px;
         }
         .lottoquiz{
