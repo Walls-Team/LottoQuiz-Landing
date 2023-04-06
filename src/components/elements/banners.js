@@ -2,6 +2,7 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import '../css/banner.scss'
+import ButtonGame from './buttonGame';
 
 function Banners() {
   return (
@@ -126,6 +127,9 @@ function Banners() {
                     <img className='others' id='tab' src="./logo3.png" alt=''/>
                 </div>
             </Carousel>
+            <div className='button-desktop'>
+              <ButtonGame/> 
+            </div>
     </div>
   )
 }

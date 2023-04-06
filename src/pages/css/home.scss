@@ -77,15 +77,31 @@
 @media(min-width: 1024px) {
     .home{
         .container-header {
-
+            height: 100vh;
+            width: 100%;
+            margin: auto;
+            margin-top: -50px;
             position: relative;
             top: 20px;
-            height: auto;
             margin-bottom: 50px;
             .header{
+                .cointainer-banners{
+                    .banner {
+                        margin: auto;
+                        width: 70vw;
+                        .button-desktop {
+                            top: -230px;
+                        }
+                    }
+                }
+                .elipse {
+                    width: 100%;
+                    height: 60%;
+                    right: 0;
+                }
                 .banner {
                     .dots{
-                        top: -125px !important;
+                        top: -135px !important;
                     }
                 }
             }
@@ -140,7 +156,7 @@
                 .easy-items{
                     display: grid;
                     height: 100vh;
-                    width: 50%;
+                    width: 60%;
                 }
             }
         }
@@ -169,12 +185,19 @@
     .container-header {
         background: url('../../assets/coins.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 78%;
+        background-position-x: center;
         position: relative;
         top: 20px;
         height: auto;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         .header{
+            .elipse {
+                width: 85%;
+                height: 60%;
+                top: 20px;
+                left: 50px;
+            }
           .cointainer-banners{
             position: absolute;
             top: 0;
@@ -190,16 +213,34 @@
             width: 100%;
             display: flex;
             z-index: 1;
-            .group {
-                top: 0;
+            .backgroundLeft{
+                position: relative;
+                width: 40%;
+                top: -10px;
+                left: 0;
+                .group1 {
+                    width: 98%;
+                }
+            }
+            .backgroundRight{
+                position: relative;
+                right: -50px;
+                width: 40%;
+                .group2 {
+                    width: 95%;
+                }
             }
         }
         .button-desktop {
-            position: absolute;
-            bottom: 40px;
+            display: block;
+            bottom: 200px;
+            text-align: center;
         }
 
             .banner {
+                width: 80vw;
+                margin: auto;
+                top: -10px;
                 img{
                     width: 62%;
                 }
@@ -212,18 +253,16 @@
                 .next {
                     position: absolute;
                     display: block;
-                    bottom: 135px;
-                    right: 40px;
+                    bottom: 120px;
+                    right: 0px;
                     z-index: 1;
                 }
                 .back {
                     position: absolute;
                     display: block;
-                    bottom: 135px;
+                    bottom: 120px;
+                    right: 45px;
                     z-index: 1;
-                }
-                .dots{
-                    top: -130px;
                 }
             }
         }
@@ -275,7 +314,8 @@
             width: 50%;
             margin: auto;
             bottom: 40px;
-            margin-left: 40px;
+            margin-left: 20px;
+            margin-right: 10px;
         }
         .lottoquiz{
             font-weight: 700;
@@ -295,7 +335,8 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            width: 50%;
+            width: 60%;
+            margin: 20px;
         }
     }
 }

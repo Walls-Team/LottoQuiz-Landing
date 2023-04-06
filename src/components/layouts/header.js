@@ -30,9 +30,11 @@ function Header() {
         </div>
       </div>
       <div className='desktop-background'>
-        <img className='group' src='./background.png' alt=''/>
-        <div className='button-desktop'>
-          <ButtonGame/> 
+        <div className='backgroundLeft'>
+         <img className='group1' src='./background1.png' alt=''/>
+        </div>
+        <div className='backgroundRight'>
+         <img className='group2' src='./background2.png' alt=''/>
         </div>
       </div>
       <div className='elipse'/>
