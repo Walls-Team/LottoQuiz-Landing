@@ -1,8 +1,7 @@
-import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import PrevAbout from './prevAbout';
-import '../css/aboutCarou.scss'
+import '../css/aboutCarou.scss';
 
 function AboutCarou() {
 const dataAbout = [

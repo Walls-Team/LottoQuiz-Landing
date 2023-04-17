@@ -1,4 +1,3 @@
-import React from 'react';
 import './css/results.scss';
 
 const Results = () => {
@@ -13,15 +12,15 @@ const Results = () => {
 
   return (
     <div className="results">
-        <h2>RESULTADO DEL SORTEO DEL 01-01-23</h2>
-        <div className="results-number">
-          {renderList}
-          <span className='bronze'>{especialResults[0]}</span>
-          <span className='silver'>{especialResults[1]}</span>
-          <span className='golden'>{especialResults[2]}</span>
-        </div>
+      <h2>RESULTADO DEL SORTEO DEL 01-01-23</h2>
+      <div className="results-number">
+        {renderList}
+        <span className="bronze">{especialResults[0]}</span>
+        <span className="silver">{especialResults[1]}</span>
+        <span className="golden">{especialResults[2]}</span>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Results

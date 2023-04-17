@@ -1,7 +1,9 @@
-import React from "react";
 import {  MedalIcon } from "../svg/icons";
 import './css/winner.scss'
-import ButtonGame from './elements/buttonGame'
+import ButtonGame from './elements/buttonGame';
+import ellipse from '../assets/images/ellipse.webp';
+import dollars from '../assets/images/dollars.webp';
+import car from '../assets/images/car.webp';
 
 const Winner = () => {
   return (
@@ -11,21 +13,18 @@ const Winner = () => {
             <MedalIcon/>
             <span className='play-icon'>Fácil de ganar: </span>
         </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. Bibendum id nunc scelerisque interdum nisl sed nullam erat. At purus suscipit et viverra pulvinar nam
-        </p>
-        <ul>
-            <li>Fames risus neque quis vel dictum at laoreet. Facilisis dignissim.</li>
-            <li>Ornare turpis est nascetur varius ac adipiscing sed amet.</li>
-            <li>Turpis tellus vitae euismod in pulvinar ut in sed. eleifend porta tempor vivamus praesent.</li>
-            <li>Faucibus ullamcorper id ac lacus volutpat eu. Nulla diam.</li>
-        </ul>
+        <ol>
+            <li>Ganadores de nueve (9) aciertos: $1.000.000</li>
+            <li>Ganadores de ocho (8) aciertos.</li>
+            <li>Ganadores de siete (7) aciertos.</li>
+            <li>Ganadores de premios especiales.</li>
+        </ol>
         <ButtonGame/>
         </div>
         <div className="image">
-            <img src="/Dollars.png" alt='Dollars' className="dollar" />
-            <img src="/car.png" alt='car' className="car" />
-            <img src="/ellipse.png" alt='ellipse' className="elipse" />
+            <img src={dollars} alt='Dollars' className="dollar" />
+            <img src={car} alt='car' className="car" />
+            <img src={ellipse} alt='ellipse' className="elipse" />
         </div>
     </div>
   )

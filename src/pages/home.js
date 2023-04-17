@@ -1,4 +1,3 @@
-import React from 'react'
 import Game from '../components/game'
 import Header from '../components/layouts/header'
 import LotteryCard from '../components/lotteryCard'
@@ -7,8 +6,11 @@ import Testimonios from '../components/testimonios'
 import Winner from '../components/winner'
 import CountdownTimer from '../components/elements/countdownTimer'
 import './css/home.scss'
-import AboutCarou from '../components/elements/aboutCarou'
-
+import AboutCarou from '../components/elements/aboutCarou';
+import cents1 from '../assets/images/cents1.webp';
+import cents2 from '../assets/images/cents2.webp';
+import cents3 from '../assets/images/cents3.webp';
+import cents4 from '../assets/images/cents4.webp';
 function Home() {
 
   const THREE_DAYS_IN_MS = 15 * 24 * 60 * 60 * 1000;
@@ -17,44 +19,51 @@ function Home() {
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
   return (
-    <div className='home'>
-      <div className='container-header'>
-        <Header/>    
+    <div className="home">
+      <div className="container-header">
+        <Header />
       </div>
-      <div className='content'>
-        <div className='count-days'>
-          <img src='/cents1.png' alt='cent' className='coin-1' />
-          <img src='/cents2.png' alt='cent' className='coin-2' />
-          <img src='/cents3.png' alt='cent' className='coin-3' />
-          <img src='/cents4.png' alt='cent' className='coin-4' />
+      <div className="content">
+        <div className="count-days">
+          <img src={cents1} alt="cent" className="coin-1" />
+          <img src={cents2} alt="cent" className="coin-2" />
+          <img src={cents3} alt="cent" className="coin-3" />
+          <img src={cents4} alt="cent" className="coin-4" />
           <h3>EL SORTEO SE REALIZA EN:</h3>
           <CountdownTimer targetDate={dateTimeAfterThreeDays} />
         </div>
-        <Results/>
-        <div className='responsive'>
-          <div className='lottery'>
-            <LotteryCard/>
+        <Results />
+        <div className="responsive">
+          <div className="lottery">
+            <LotteryCard />
           </div>
           <div className="easy-items">
-            <Game/>
-            <Winner/>
+            <Game />
+            <Winner />
           </div>
         </div>
-        <div className='test'>
-          <Testimonios/>
+        <div className="test">
+          <Testimonios />
         </div>
         <div className="about">
-          <div className='about-text'>
-          <h1 className='lottoquiz'>LottoQuiz en Venezuela</h1>
-          <p className='about-us'>Lorems ipsum dolor sit amet consectetur. Tempor pharetra orci dignissim ut leo quis id adipiscing. Quam nisl ullamcorper nisi pulvinar iaculis at nulla cras. Eros hac blandit vivamus convallis pulvinar sollicitudin egestas. Condimentum nunc nibh sagittis malesuada at nulla ut morbi eget. Sit neque volutpat et neque. Viverra vulputate elit non vitae hendrerit congue faucibus ligula.</p>
+          <div className="about-text">
+            <h1 className="lottoquiz">LottoQuiz en Venezuela</h1>
+            <p className="about-us">
+              Lorems ipsum dolor sit amet consectetur. Tempor pharetra orci
+              dignissim ut leo quis id adipiscing. Quam nisl ullamcorper nisi
+              pulvinar iaculis at nulla cras. Eros hac blandit vivamus convallis
+              pulvinar sollicitudin egestas. Condimentum nunc nibh sagittis
+              malesuada at nulla ut morbi eget. Sit neque volutpat et neque.
+              Viverra vulputate elit non vitae hendrerit congue faucibus ligula.
+            </p>
           </div>
           <div className="video">
-            <AboutCarou/>
+            <AboutCarou />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Home

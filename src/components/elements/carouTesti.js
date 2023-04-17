@@ -1,4 +1,3 @@
-import React from 'react'
 import { dataTestimonios } from './dataTesti'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -117,14 +116,21 @@ function CarouTesti() {
       };
   return (
     <>
-    <div className='carou-desktop'>
-      <Carousel responsive={responsive} showDots={true} customDot= {<CustomDot/>} 
-      arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />} className="carousel-testi">
-        {peoples_}
-      </Carousel>
-    </div>
+      <div className="carou-desktop">
+        <Carousel
+          responsive={responsive}
+          showDots={true}
+          customDot={<CustomDot />}
+          arrows={false}
+          renderButtonGroupOutside={true}
+          customButtonGroup={<ButtonGroup />}
+          className="carousel-testi"
+        >
+          {peoples_}
+        </Carousel>
+      </div>
     </>
-  )
+  );
 }
 
 export default CarouTesti

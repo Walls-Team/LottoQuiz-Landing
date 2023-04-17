@@ -1,8 +1,8 @@
-import './index.scss';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Home from './pages/home';
-import Navbar from './components/layouts/navbar';
-import Footer from './components/layouts/footer';
+import "./index.scss";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Home from "./pages/home";
+import Navbar from "./components/layouts/navbar";
+import Footer from "./components/layouts/footer";
 
 const Layout = () => {
   return (
@@ -12,7 +12,7 @@ const Layout = () => {
       <Footer />
     </div>
   );
-}
+};
 
 const router = createBrowserRouter([
   {
@@ -20,11 +20,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: '/',
-        element: <Home />
+        path: "/",
+        element: <Home />,
       },
-    ]
-  }
+    ],
+  },
 ]);
 
 function App() {
