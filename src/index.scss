@@ -1,10 +1,24 @@
+*{
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../src/assets/Fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Wolf Sans SC';
+  src: url('../src/assets/Fonts/WolfSans-Regular.ttf');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter';
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #05051E;
 }
 
 code {

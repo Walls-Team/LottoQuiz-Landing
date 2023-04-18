@@ -1,0 +1,116 @@
+.winner {
+    background: #0E0D30;
+    border-radius: 13px;
+    margin: auto;
+    width: 88%;
+    color: #FFF;
+    padding: 20px 18px;
+
+    .easy{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 24px;
+        display: flex;
+        
+        .play-icon{
+            margin: 0 12px;
+        }
+    }
+
+    p{
+        color: #626178;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    li{
+        margin: 15px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+    .image{
+        position: relative;
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+
+        .dollar {
+            position: absolute;
+            right: 2%;
+            width: 58%;
+
+        }
+
+        .car{
+            position: absolute;
+            width: 100%;
+            top: 21%;
+        }
+        .elipse{
+            width: 100%;
+        }
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+    .winner{
+        margin: 20px 0;
+        .easy {
+            font-size: 40px;
+            padding: 10px;
+            line-height: 30px;
+        }
+        li {
+            margin-top: 22px;
+            font-size: 22px;
+            line-height: 20px;
+        }
+        .image{
+            margin: auto;
+            .dollar {
+                top: 4%;
+            }
+            .elipse{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+    
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .winner{
+        margin: 20px 2%;
+
+        .image{
+            .dollar{
+                right: 5%;
+            }
+        }
+
+    }   
+}
+
+@media (max-width: 321px) {
+    .winner{
+        position: relative;
+        top: 20px;
+        width: 78%;
+        margin: auto;
+
+        .image{
+            .dollar{
+                right: 0;
+            }
+        }
+
+    }
+    
+}

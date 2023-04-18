@@ -1,0 +1,79 @@
+.countdown{
+    background: #0E0D30;
+    border: 0.566426px solid #3C3B59;
+    box-shadow: inset 0px 2.2657px 2.2657px rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    margin: 0 15px;
+    padding: 30px 15px;
+    display: grid;
+
+    .number{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    span{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+.countdown-danger{
+    background: #992929;
+    border: 0.566426px solid #3C3B59;
+    box-shadow: inset 0px 2.2657px 2.2657px rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    margin: 0 15px;
+    padding: 30px 15px;
+    display: grid;
+
+    .number{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    span{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .countdown{
+        margin: 0 5px;
+        padding: 0;
+    
+        .number{
+            font-size: 28px;
+            line-height: 60px;
+            padding: 0 10px;
+        }
+    
+        span{
+            font-size: 12px;
+        }
+    }
+    
+    .countdown-danger{
+        margin: 0 5px;
+        padding: 0;
+    
+        .number{
+            font-size: 28px;
+            line-height: 60px;
+            padding: 0 10px;
+        }
+    
+        span{
+            font-size: 12px;
+        }
+    }
+}

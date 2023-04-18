@@ -1,0 +1,50 @@
+.footer{
+   position: relative;
+   background-color:#896DE5;
+   height: 80px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   bottom: 0;
+
+   .left {
+      display: flex;
+      width: 20%;
+      margin-left: 40px;
+   } 
+
+   .icons{
+      position: relative;
+      right: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 50px;
+      min-width: 9%;
+   }
+}
+
+@media (max-width: 1023px) {
+
+   .nav-logo {
+      height: 60%;
+      margin-top: 9px;
+   }
+
+   .footer {
+      z-index: 10;
+      height: 80px;
+      width: 100%;
+
+      .left{
+          margin: 10px;
+          margin-bottom: 15px;
+      }
+
+      .icons{
+         margin-right: 20px;
+      }
+  }
+   
+}

@@ -1,0 +1,187 @@
+.card{
+    width: 90%;
+    margin: 20px 5%;
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    flex-direction: column;
+
+    
+    .logo-card{
+        background: radial-gradient(100% 100% at 50% 0%, #5B3098 0%, #2F1A4C 100%);
+        display: grid;
+        align-items: center;
+        
+        .navbar-logo-card{
+            margin: 0 auto;
+            width: 70%;
+            align-items: center;
+        }
+        
+        .lottery-name{
+            display: grid;
+            margin: 15px auto;
+
+            .name{
+                font-family: 'Wolf Sans SC';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: center;
+            }
+
+            .bar{
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+    }
+
+    .body{
+        display: grid;
+        background-image: url('../../assets/images/cents.webp'),url('../../assets/images/Group.webp'),url('../../assets/images/Rectangle.webp') ;
+        background-size: 100% 100%;
+
+        .sort{
+            background: #FFFFFF;
+            opacity: 0.65;
+            border-radius: 14px;
+            display: grid;
+            text-align: center;
+            color: #000;
+            margin: 25px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+
+            .sort-day{
+                margin: 15px 0;
+                margin-bottom: 0px;
+            }
+
+            .play-numbers{
+                display: flex;
+                align-items: center;
+                margin: 15px auto;
+                font-size: 10px;
+
+                span{
+                    margin-right: 10px;
+                }
+
+                .btn1,.btn2{
+                    background-color: #7553E1;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 3px 6px rgba(255, 255, 255, 0.24);
+                    border-radius: 20px;
+                    font-family: 'Inter';
+                    color: #FFF;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    padding: 5px 15px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+            .ticket{
+                letter-spacing: 2px;
+                margin-bottom: 5px;
+
+                span{
+                    margin: 4px;
+                }
+            }
+        }
+        
+        .lottery{
+            width: 100%;
+            text-align:  center;
+            margin: 0;
+
+            table{
+                
+                width: 100%;
+                flex: auto;
+                thead{
+                    display: flex;
+                    justify-content: space-between;
+
+                    td{
+                        font-weight: 800;
+                        font-size: 32px;
+                        line-height: 39px;
+                        color: #38004D;
+                        background: #FFFFFF;
+                        border-radius: 10px;
+                        width: 20%;
+                        text-align: center;
+                        padding: 6px 8px;
+                        margin: 6px;
+                        cursor: pointer; 
+                    }
+
+                    .golden{
+                        background: linear-gradient(90deg, #A56C0B 0%, #C9A33D 33.33%, #F4E077 61.98%, #C9A33D 100%);
+                        border: 3px solid #000000;
+                        margin: 6px;
+                        padding: 3px 8px;
+                    }
+                }
+
+                
+            }
+        }
+        .play{
+            background: #FFFFFF;
+            opacity: 0.65;
+            border-radius: 20px;
+            display: grid;
+            margin: 20px 20px;
+            
+
+            button{
+                margin: 30px 40px;
+                padding: 10px 0;
+                background: #7553E1;
+                border: 2px solid #E1BBFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 26px rgba(229, 161, 253, 0.81), inset 0px 0px 14px rgba(196, 138, 223, 0.25), inset 0px 3px 6px rgba(255, 255, 255, 0.24);
+                border-radius: 30px;
+                font-family: 'Inter';
+                font-weight: 700;
+                color: #FFF;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .card{
+        width: 55%;
+        margin: 10px 5%;
+        display: flex;
+    }
+    
+}
+
+@media (max-width: 376px){
+    .card{
+        .body{
+            .lottery{
+                table{
+                    tr{
+                        td{
+                            padding: 6px 2px;
+                            margin: 1%;
+                        }
+                        .golden{
+                            padding: 3px 2px;
+                            margin: 1%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

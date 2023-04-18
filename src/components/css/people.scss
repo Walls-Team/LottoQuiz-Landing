@@ -1,0 +1,23 @@
+.card-people {
+    position: relative;
+    margin: 40px 20px;
+    top: 10px;
+    height: auto;
+    .photo-people{
+        position: relative;
+        width: 100%;
+    }
+    .description {
+        padding: 10px 10px 0;
+        bottom: 170px;
+        position: relative;
+        font-size: 0.7rem;
+        background: rgba(255, 255, 255, 0.3);
+        border: 1.23022px solid #FFFFFF;
+        backdrop-filter: blur(6.15108px);
+        border-radius: 6.15108px;
+        margin: 15px;
+        text-align: left;
+    }
+
+}

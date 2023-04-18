@@ -1,0 +1,44 @@
+
+.banner{
+    position: relative;
+    top: 30px;
+    .content{
+        position: relative;
+    }
+    .button-desktop {
+        display: none;
+        position: relative;
+        margin: auto;
+        .play-button {
+            box-shadow: 0px 0px 26px rgba(229, 161, 253, 0.81), inset 0px 0px 14px rgba(196, 138, 223, 0.25), inset 0px 3px 6px rgba(255, 255, 255, 0.24);
+        }
+    }
+    .next {
+        float: right;
+        cursor: pointer ;
+        display: none;
+    }
+    .back {
+        position: absolute;
+        display: none;
+        bottom: 0px;
+        right: 85px;
+        cursor: pointer ;
+    }
+    img {
+        position: relative;
+        margin-bottom: 130px;
+        padding: 60px;
+    }
+}
+
+.front{
+    position: relative;
+    bottom: 50%;
+    margin-bottom: 60px;
+}
+.others{
+    position: relative;
+    bottom: 60px;
+    margin-bottom: 100px;
+}
