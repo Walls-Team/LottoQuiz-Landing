@@ -123,7 +123,7 @@
                 margin: 50px 0 200px;
                 height: auto;
                 .lottery {
-                    width: 50%;
+                    width: 40%;
                     .card{ 
                         position: relative;
                         align-items: center;
@@ -138,13 +138,12 @@
                 .game {
                     display: flex;
                     .text-game {
-                        width: 50%;
+                        width: 60%;
                     }
                     .image {
                         position: relative;
                         width: 50%;
                         bottom: 10px;
-            
                     }
                 }
                 .winner {
@@ -233,8 +232,15 @@
         }
         .button-desktop {
             display: block;
+            width: 60%;
             bottom: 200px;
             text-align: center;
+            .play-button {
+                width: 50%;
+                font-size: 20px;
+                padding: 13px 60px;
+                cursor: pointer;
+            }
         }
 
             .banner {

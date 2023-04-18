@@ -79,7 +79,7 @@ const LotteryCard = () => {
         </div>
         <div className="lottery">
           <table>
-            <tr>
+            <thead>
               {value.map((e) => {
                 return (
                   <td ref={ref} id={e} onClick={() => addNumber(e)}>
@@ -87,8 +87,8 @@ const LotteryCard = () => {
                   </td>
                 );
               })}
-            </tr>
-            <tr>
+            </thead>
+            <thead>
               {value2.map((e) => {
                 return (
                   <td ref={ref} id={e} onClick={() => addNumber(e)}>
@@ -96,8 +96,8 @@ const LotteryCard = () => {
                   </td>
                 );
               })}
-            </tr>
-            <tr>
+            </thead>
+            <thead>
               {value3.map((e) => {
                 return (
                   <td ref={ref} id={e} onClick={() => addNumber(e)}>
@@ -105,8 +105,8 @@ const LotteryCard = () => {
                   </td>
                 );
               })}
-            </tr>
-            <tr>
+            </thead>
+            <thead>
               {value4.map((e) => {
                 return (
                   <td ref={ref} id={e} onClick={() => addNumber(e)}>
@@ -114,8 +114,8 @@ const LotteryCard = () => {
                   </td>
                 );
               })}
-            </tr>
-            <tr>
+            </thead>
+            <thead>
               {value5.map((e) => {
                 return (
                   <td id={e} onClick={() => addNumber(e)}>
@@ -123,7 +123,7 @@ const LotteryCard = () => {
                   </td>
                 );
               })}
-            </tr>
+            </thead>
           </table>
         </div>
         <div className="play">

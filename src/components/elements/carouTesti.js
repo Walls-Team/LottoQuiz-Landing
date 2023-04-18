@@ -32,8 +32,8 @@ function CarouTesti() {
                 <rect x="4.505" y="0.52356" width="30.4951" height="30.4951" rx="15.2475" fill="#7553E1"/>
                 </g>
                 <defs>
-                <filter id="filter0_di_14_290" x="0.505005" y="0.52356" width="38.4951" height="38.4951" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_di_14_290" x="0.505005" y="0.52356" width="38.4951" height="38.4951" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                 <feOffset dy="4"/>
                 <feGaussianBlur stdDeviation="2"/>
@@ -49,7 +49,7 @@ function CarouTesti() {
                 <feBlend mode="normal" in2="shape" result="effect2_innerShadow_14_290"/>
                 </filter>
                 </defs>
-                <path d="M 27.037 15.653 L 13.037 15.653 M 13.037 15.653 L 20.037 22.653 M 13.037 15.653 L 20.037 8.653" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M 27.037 15.653 L 13.037 15.653 M 13.037 15.653 L 20.037 22.653 M 13.037 15.653 L 20.037 8.653" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
         </div>
       )
@@ -60,8 +60,8 @@ function CarouTesti() {
                 <rect x="4.505" y="0.52356" width="30.4951" height="30.4951" rx="15.2475" fill="#7553E1"/>
                 </g>
                 <defs>
-                <filter id="filter0_di_14_290" x="0.505005" y="0.52356" width="38.4951" height="38.4951" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_di_14_290" x="0.505005" y="0.52356" width="38.4951" height="38.4951" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                 <feOffset dy="4"/>
                 <feGaussianBlur stdDeviation="2"/>
@@ -77,7 +77,7 @@ function CarouTesti() {
                 <feBlend mode="normal" in2="shape" result="effect2_innerShadow_14_290"/>
                 </filter>
                 </defs>
-                <path d="M 12.886 15.765 L 26.886 15.765 M 26.886 15.765 L 19.886 8.765 M 26.886 15.765 L 19.886 22.765" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M 12.886 15.765 L 26.886 15.765 M 26.886 15.765 L 19.886 8.765 M 26.886 15.765 L 19.886 22.765" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
         </div>
     

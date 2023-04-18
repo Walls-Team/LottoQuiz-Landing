@@ -15,6 +15,8 @@ function Banners() {
         showStatus={false}
         showArrows={false}
         emulateTouch={true}
+        autoPlay={true}
+        infiniteLoop={true}
         renderIndicator={(onClickHandler, isSelected, index, label) => {
           const defStyle = {
             padding: 10,
@@ -77,9 +79,9 @@ function Banners() {
                       width="38.4951"
                       height="38.4951"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -132,9 +134,9 @@ function Banners() {
                   <path
                     d="M 12.886 15.765 L 26.886 15.765 M 26.886 15.765 L 19.886 8.765 M 26.886 15.765 L 19.886 22.765"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
@@ -173,9 +175,9 @@ function Banners() {
                       width="38.4951"
                       height="38.4951"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -228,9 +230,9 @@ function Banners() {
                   <path
                     d="M 27.037 15.653 L 13.037 15.653 M 13.037 15.653 L 20.037 22.653 M 13.037 15.653 L 20.037 8.653"
                     stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>

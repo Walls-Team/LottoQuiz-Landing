@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState , Component } from 'react';
+import { Link } from 'react-scroll';
 import { FaBars } from '../../svg/icons';
 import '../css/navbar.scss';
 import ButtonGame from '../elements/buttonGame';
@@ -25,26 +25,26 @@ function Navbar() {
         <div className="right">
           <div className="item-menu">
             <span onClick={() => handlerLinkTo("/")} className="navbar-link">
-              Inicio
+            <Link to="header" smooth={true} duration={200} spy={true}>Inicio</Link>
             </span>
           </div>
           <div className="item-menu">
-            <span className="navbar-link">Sorteo</span>
+            <span className="navbar-link"><Link to="draw" smooth={true} duration={200} offset={160} spy={true}>Sorteo</Link></span>
           </div>
           <div className="item-menu">
-            <span className="navbar-link">Resultado</span>
+            <span className="navbar-link"><Link to="result" smooth={true} duration={200} offset={-180} spy={true}>Resultado</Link></span>
           </div>
           <div className="item-menu">
-            <span className="navbar-link">Fácil de jugar</span>
+            <span className="navbar-link"><Link to="easy" smooth={true} duration={200} spy={true}>Fácil de jugar</Link></span>
           </div>
           <div className="item-menu">
-            <span className="navbar-link">Fácil de ganar</span>
+            <span className="navbar-link"><Link to="winner" offset={-60} smooth={true} duration={200} spy={true}>Fácil de ganar</Link></span>
           </div>
           <div className="item-menu">
-            <span className="navbar-link">Testimonios</span>
+            <span className="navbar-link"><Link to="testimonials" smooth={true} duration={200} spy={true}>Testimonios</Link></span>
           </div>
           <div className="item-menu">
-            <span className="navbar-link">LottoQuiz</span>
+            <span className="navbar-link"><Link to="lottoquiz" smooth={true} duration={200} spy={true}>LottoQuiz</Link></span>
           </div>
           <div className="item-menu">
             <span className="navbar-link">Terminos</span>

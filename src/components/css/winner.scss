@@ -60,6 +60,16 @@
 @media (min-width: 1024px) {
     .winner{
         margin: 20px 0;
+        .easy {
+            font-size: 40px;
+            padding: 10px;
+            line-height: 30px;
+        }
+        li {
+            margin-top: 22px;
+            font-size: 22px;
+            line-height: 20px;
+        }
         .image{
             margin: auto;
             .dollar {

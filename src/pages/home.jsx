@@ -20,11 +20,11 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="container-header">
+      <div className="container-header" id="header">
         <Header />
       </div>
       <div className="content">
-        <div className="count-days">
+        <div className="count-days" id="draw">
           <img src={cents1} alt="cent" className="coin-1" />
           <img src={cents2} alt="cent" className="coin-2" />
           <img src={cents3} alt="cent" className="coin-3" />
@@ -32,20 +32,24 @@ function Home() {
           <h3>EL SORTEO SE REALIZA EN:</h3>
           <CountdownTimer targetDate={dateTimeAfterThreeDays} />
         </div>
+        <div id="result">
         <Results />
-        <div className="responsive">
+        </div>
+        <div className="responsive" id="easy">
           <div className="lottery">
             <LotteryCard />
           </div>
           <div className="easy-items">
             <Game />
+            <div id="winner">
             <Winner />
+            </div>
           </div>
         </div>
-        <div className="test">
+        <div className="test" id="testimonials">
           <Testimonios />
         </div>
-        <div className="about">
+        <div className="about" id="lottoquiz">
           <div className="about-text">
             <h1 className="lottoquiz">LottoQuiz en Venezuela</h1>
             <p className="about-us">

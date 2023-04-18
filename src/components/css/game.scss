@@ -36,6 +36,7 @@
         display: flex;
         margin-top: 20px;
         justify-content: center;
+        clip-path: inset(0px 0px 0px 0px);
 
         .tickets{
             width: 100%;
@@ -50,6 +51,16 @@
 @media (min-width: 1024px) {
     .game{
         margin: 20px 0;
+        .easy {
+            font-size: 40px;
+            padding: 10px;
+            line-height: 30px;
+        }
+        li {
+            margin-top: 22px;
+            font-size: 22px;
+            line-height: 25px;
+        }
         .image{
             position: relative;
             display: flex;
